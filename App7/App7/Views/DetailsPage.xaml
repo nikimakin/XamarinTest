@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.Views.DetailsPage">
+    <Grid>
+
+        <Label Text="Offer Details:" FontSize="20" HorizontalOptions="StartAndExpand" Grid.Row="0" FontAttributes="Bold"/>
+
+        <Grid x:Name="GridDetails" VerticalOptions="Center" HorizontalOptions="StartAndExpand" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="ID:" HorizontalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" Margin="10" FontAttributes="Bold"/>
+            <Label Text="{Binding Id}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Grid.Row="0" Grid.Column="1" TextColor="Blue"  FontAttributes="Bold"/>
+
+            <Label Text="JSON:" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0" Margin="10" FontAttributes="Bold"/>
+            <Label x:Name="selected" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="1" TextColor="Green"  FontAttributes="Bold"/>
+        </Grid>
+    </Grid>
+</ContentPage>
